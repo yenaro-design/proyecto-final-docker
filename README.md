@@ -47,6 +47,7 @@ proyecto-final-docker/
 ├── pruebas/
 │   └── prueba-carga.js
 └── docker-compose.yml
+└── README.md
 ```
 
 ## 5. Requisitos para ejecutar el proyecto
