@@ -1,0 +1,32 @@
+
+global:
+  scrape_interval: 5s
+
+  evaluation_interval: 5s
+
+scrape_configs:
+
+  # Monitoreo de la primera instancia
+  - job_name: 'backend1'
+    static_configs:
+      - targets: ['backend1:5000']
+
+  # Monitoreo de la segunda instancia
+  - job_name: 'backend2'
+    static_configs:
+      - targets: ['backend2:5000']
+
+  # Monitoreo de la tercera instancia
+  - job_name: 'backend3'
+    static_configs:
+      - targets: ['backend3:5000']
+
+  # Monitoreo de Nginx mediante su exportador
+  - job_name: 'nginx'
+    static_configs:
+      - targets: ['nginx-exporter:9113']
+
+  # Monitoreo de recursos de los contenedores
+  - job_name: 'cadvisor'
+    static_configs:
+      - targets: ['cadvisor:8080']
