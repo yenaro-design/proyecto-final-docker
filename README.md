@@ -32,6 +32,7 @@ El funcionamiento general es el siguiente:
 
 ## 4. Estructura del proyecto
 
+´´´
 proyecto-final-docker/
 ├── backend/
 │   ├── app.py
@@ -46,6 +47,7 @@ proyecto-final-docker/
 ├── pruebas/
 │   └── prueba-carga.js
 └── docker-compose.yml
+´´´
 
 ## 5. Requisitos para ejecutar el proyecto
 
